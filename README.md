@@ -92,3 +92,44 @@ If the article takes 30 minutes or longer to read:
 
 There aren't tests for this feature, so you'll have to rely on running the code
 in the browser to see if your implementation works!
+
+
+
+
+
+_______________________________________________________
+
+Key Features Implemented:
+Header Component:
+
+Displays the blog name from blogData
+
+About Component:
+
+Uses default image if none provided
+
+Shows blog description
+
+Includes alt text for accessibility
+
+ArticleList Component:
+
+Maps through posts to render Article components
+
+Uses post.id as unique key
+
+Article Component:
+
+Shows title, date (with default), preview
+
+Implements bonus minutes-to-read feature:
+
+☕️ emojis for <30 min articles (1 per 5 mins)
+
+🍱 emojis for ≥30 min articles (1 per 10 mins)
+
+App Component:
+
+Imports and renders all child components
+
+Passes appropriate props from blogData
